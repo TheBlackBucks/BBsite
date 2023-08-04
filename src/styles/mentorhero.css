@@ -1,0 +1,245 @@
+@import url(app.css);
+
+.mentorhero {
+  padding: 151px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.mentorhero::before {
+  content: "";
+  /* background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63cb6ca129ea6_hero_before.png) no-repeat; */
+  position: absolute;
+  left: 0;
+  bottom: -72px;
+  width: 358px;
+  height: 364px;
+  z-index: -1;
+}
+
+.mentorhero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mentorhero-left-top {
+  max-width: 690px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.mentorhero-left-top h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.mentorhero-left-top p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.mentorhero-cards {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mentorhero-cards a {
+  padding: 16px 16px 12px;
+  width: 163px;
+  height: 157px;
+  transition: all 0.3s linear;
+}
+
+.mentorhero-cards a:hover {
+  transform: translateY(-15px);
+}
+
+.mentorhero-cards a:nth-child(1) {
+  /* background-image: url(https://cdn.unstop.com/uploads/images/practice/crack-inteview.png?d=326x314); */
+  background-size: cover;
+}
+
+.mentorhero-cards a:nth-child(2) {
+  /* background-image: url(https://cdn.unstop.com/uploads/images/practice/mcq.png?d=326x314); */
+  background-size: cover;
+}
+
+.mentorhero-cards a:nth-child(3) {
+  /* background-image: url(https://cdn.unstop.com/uploads/images/practice/coding-sprint.png?d=326x314); */
+  background-size: cover;
+}
+
+.mentorhero-cards a:nth-child(4) {
+  /* background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63de3f8950981_mock_interview.png?d=326x314); */
+  background-size: cover;
+}
+
+.mentorhero-cards a span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mentorhero-cards a:nth-child(1) {
+  color: #685200;
+}
+
+.mentorhero-cards a:nth-child(2) {
+  color: #094010;
+}
+
+.mentorhero-cards a:nth-child(3) {
+  color: #2a065e;
+}
+
+.mentorhero-cards a:nth-child(4) {
+  color: #094010;
+}
+
+.mentorhero-img {
+  position: absolute;
+  top: -240px;
+  right: -1582px;
+  z-index: 0;
+}
+
+.mentorhero-img img {
+  max-width: 50%;
+}
+
+@media (max-width: 1100px) {
+  .mentorhero {
+    padding: 10px 0;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .mentorhero-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mentorhero-left-top {
+    width: 100%;
+  }
+
+  .mentorhero-img {
+    position: static;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: -35% -25% 10px;
+    width: 150%;
+  }
+
+  .mentorhero-img img {
+    width: 100%;
+  }
+
+  .mentorhero-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1100px) {
+  .mentorhero-cards a {
+    width: 240px;
+    height: 250px;
+    border-radius: 20px;
+  }
+}
+
+.mentorship-btns {
+    display: flex;
+    gap: 1rem;
+  }
+  
+.mentorship-btns button:nth-child(1) {
+    text-decoration: none;
+    color: #fff;
+    height: 42px;
+    box-shadow: none;
+    /* text-transform: capitalize; */
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 8px;
+    background: #0073e6;
+    border: none;
+    padding: 0 2rem;
+  }
+  
+  .mentorship-btns button:nth-child(2) {
+    background: transparent;
+    color: #1c4980;
+    border: 1px solid #1c4980;
+    height: 42px;
+    box-shadow: none;
+    /* text-transform: capitalize; */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 0 2rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  
+  .mentorship-btn:hover {
+    background: var(--primary-color) !important;
+    color: #fff !important;
+  }
+
+  .faq-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    background: #e5f1fc;
+    border-radius: 12px;
+    padding: 35px;
+    font-size: 28px;
+    flex-wrap: wrap;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    ;
+  }
+  .faq-sub{
+    display: flex;
+    justify-content: space-around;
+    gap:20em
+  }
+  .faq-btn{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1c4980;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 42px;
+    border: 1px solid #1c4980;
+    border-radius: 50px;
+    transition: .3s;
+    margin: 0;
+    background: #fff;
+   
+
+  }
+  .faq-text{
+    display: block;
+  }
+  .faq-btn:hover {
+    background: var(--primary-color) !important;
+    color: #fff !important;
+  }
